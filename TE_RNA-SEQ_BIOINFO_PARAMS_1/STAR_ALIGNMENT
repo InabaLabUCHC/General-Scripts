@@ -1,0 +1,11 @@
+   STAR --runMode alignReads \
+                 --genomeDir "$GENOME_INDEX" \
+                 --readFilesIn "$R1_TRIMMED" "$R2_TRIMMED" \
+                 --readFilesCommand zcat \
+                 --outFileNamePrefix "${TE_ALIGN_DIR}/${SAMPLE}_TE_" \
+                 --outSAMtype BAM Unsorted \
+                 --outFilterMultimapNmax 150 \
+                 --winAnchorMultimapNmax 150 \
+                 --outSAMstrandField intronMotif \
+                 --outTmpDir "${TE_ALIGN_DIR}/${SAMPLE}_TE_STARtmp" \
+                 --runThreadN $CPUS
