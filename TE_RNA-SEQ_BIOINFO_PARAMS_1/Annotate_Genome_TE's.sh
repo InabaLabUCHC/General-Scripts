@@ -14,7 +14,7 @@
 # TE Annotation Pipeline Using Custom Consensus Library
 # ============================================================================
 
-#genome.fa is the flybase DM6 (6.64) and te_consensus.fa is the Bergman labs D.mel TE concensus sequences
+#genome.fa is the flybase DM6 (6.65) and te_consensus.fa is the Bergman labs D.mel TE concensus sequences
 
 set -e
 
